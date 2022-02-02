@@ -1,0 +1,144 @@
+/* Color scheme */
+/*
+#3f3f37 Black olive
+#9e768f Mountbatten Pink
+#d6d6b1 Pale Spring Bud
+#494331 Olive Drab 7
+#de541e Flame
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 700px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.card {
+  background-color: #FFFFFF80;
+  padding: 40px;
+  /* margin: 20px 0; */
+  text-align: center;
+  border-radius: 40px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+#card-introduction {
+  z-index: 9999;
+  position: relative;
+  background-color: #49433180;
+}
+
+#card-links {
+  z-index: -1;
+  padding: 80px 80px;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: -2.5em;
+}
+
+#img-circle {
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  /* background-color: #494331; */
+  background-image: url(https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  font-family: 'Inter', Arial, sans-serif;
+  color: #494331;
+  font-size: larger;
+  line-height: 1.2;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h2 {
+  color: #de541e;
+}
+
+a {
+  text-decoration: none;
+  color: #9e768f;
+}
+
+a:hover {
+  color:#de541e;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.list-inline i {
+  font-size: 50px;
+}
+
+#button {
+  background-color: #9e768f;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+
+#button:hover {
+  background-color: #de541e;
+}
+
+#introduction p {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 960px) {
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    width: 500px;
+  }
+  .list-inline i {
+    font-size: 40px;
+  }
+  .list-inline > li {
+    padding: 0px 5px;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    width: 300px;
+  }
+  p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+  .list-inline i {
+    font-size: 35px;
+  }
+  .list-inline > li {
+    padding: 0px 10px;
+  }
+  h2 {
+    font-size: larger;
+  }
+}
